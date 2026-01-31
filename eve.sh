@@ -7,24 +7,17 @@
 # 
 #   DESCRIPTION:  EVE-NG AUTOMATION SCRIPT
 # 
-#        AUTHOR:  Nguyen Van long, vanlong.me@gmail.com
-#      Contributor:  Nguyen Trong Tan (), nguyentrongtan124@gmail.com
-#  ORGANIZATION:  ITFORVN
-#       VERSION:  3.0
-#       CREATED:  16/07/2019 03:03:56 PM ICT
-#        EDITED:  19/07/2019 03:03:56 PM ICT
-#      REVISION:  ---
-#===============================================================================
+# ==================================================
 
 # GLOBAL VARIABLES
 # Ten user muon tao
-USERNAME="itforvn"
+USERNAME="student"
 # So luong user muon tao moi
 USERNEW="10"
 # So luong user da ton tai
-USEREXIST="20"
+USEREXIST="1"
 # Mat khau mac dinh cho user
-PASSWDEXAMP="123"
+PASSWDEXAMP="Test123"
 # Thu muc LAB cho user dang: /DIR/
 DIRLAB="/LAB-DIR/"
 
@@ -78,7 +71,7 @@ fix_lab () {
 	sleep 3
 	
     echocolor 'Khoa tinh nang Close Lab'
-    `wget -O action.js https://raw.githubusercontent.com/caitechnovations/EVE-NG-Automation/master/tweak/actions.js?token=AHGGBQAW752YAIAYNCQXO7K5HAUZY && mv action.js /opt/unetlab/html/themes/default/js`
+    `wget -O action.js https://raw.githubusercontent.com/caitechnovations/EVE-Automation/main/Tweak/actions.js && mv action.js /opt/unetlab/html/themes/default/js`
 }
 
 ####### MAIN ######
